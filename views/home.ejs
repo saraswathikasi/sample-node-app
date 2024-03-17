@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  header {
+    background-color: #081b29; 
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+
+  header h1 {
+    margin: 0;
+    font-size: 36px;
+  }
+
+   ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+    float:left;
+  }
+
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+   
+  }
+   li a:hover{
+    background-color: aquamarine;
+   }
+   section {
+    text-align: center;
+    padding: 50px;
+  }
+
+  section h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+
+  section p {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+
+   footer {
+    background-color: #081b29;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-top: auto;
+  }
+        </style>
+</head>
+<body>
+    <header>
+        <h1>Fruit Market</h1>
+        <nav>
+          <ul>
+            <li><a href="#" onclick="showPopup()">Home</a></li>
+            <li><a href="#" onclick="showPopup()">About</a></li>
+            <li><a href="#" onclick="showPopup()">Products</a></li>
+            <li><a href="#" onclick="showPopup()"> Cart</a></li>
+            <li><a href="#" onclick ="showPopup()">Contact</a></li>
+             <li><a href="/signin">Login</a></li>
+             <li><a href="/signup">Signup</a></li>
+          </ul>
+          
+        </nav>
+    
+      </header>
+      <section>
+        <h2>Welcome to Our Website !!!</h2>
+        <p>Fruit power: Fuel for life</p>
+        
+        </section>
+      
+  <footer>
+    <p>&copy; 2024 Fruit Market. All rights reserved.</p>
+  </footer>
+      <script>
+        function showPopup(){
+            alert("Please Signup for shopping!!");
+        }
+        </script>
+</body>
+</html>

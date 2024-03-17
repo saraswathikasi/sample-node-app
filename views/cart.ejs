@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CART</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #081b29;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #1c3b53;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .cart {
+            margin-top: 20px;
+        }
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .table th, .table td {
+            padding: 10px;
+            text-align: left;
+        }
+        .table th {
+            background-color: #081b29;
+            color: white;
+        }
+        .table tr:nth-child(even) {
+            background-color: #253f56;
+        }
+        .table tr:hover {
+            background-color: #34586f;
+        }
+        button[type="submit"] {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+        button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .cs{
+            text-align: center;
+            justify-content: center;
+        }
+        </style>
+</head>
+<body>
+    <div class="container">
+      <form action="cartsubmit"  method="GET">
+        <h1>YOUR CART !!!</h1>
+        <div class="cart">
+            <table class="table">
+                <tr>
+                    <th>Products </th>
+                    <th>Cost </th>
+                </tr>
+                <% for(var i = 0;i < productsData.length;i++){ %>
+                    <tr>
+                    <td><%= productsData[i] %></td>
+                    <td><%= cost[i] %></td></tr>
+            <% } %>
+            <tr class = "hover">
+                <th>Total Cost</th>
+                <th><%= amount %></th></tr>
+            </table>
+            <p> Your order is eligible for FREE Delivery</p>
+            <button type="submit">Proceed to Buy</button>
+            <br>
+            <br>
+            
+            <div class="cs">
+         <b> Happy Shopping</b>
+         <br><b>Buy Again</b>
+         </div>  
+            </div>
+            </form>
+            </div>  
+</body>
+</html>
